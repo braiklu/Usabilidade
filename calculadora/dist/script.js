@@ -22,8 +22,8 @@ function calculate() {
     result = eval(expression);
     memory.innerHTML += expression + " = " + result + "<br>";
   } catch (error) {
-    result = "Erro";
-    memory.innerHTML += expression + " = " + result + "<br>";
+    alert("Erro ao calcular. Verifique a expressão.");
+    result = "";
   }
 
   display.value = result;
